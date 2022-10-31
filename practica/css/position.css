@@ -1,0 +1,39 @@
+div {
+  /*(static) Este es por defecto, no se ve afectado por la posiciones */
+  border: 1px solid gray;
+  padding: 5px;
+  margin: 5px;
+  background-color: white;
+}
+.relative {
+  position: relative;
+  left: 80px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: greenyellow;
+  z-index: 10;
+}
+
+.absolute {
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+}
+
+.relative.container {
+  width: 300px;
+  height: 400px;
+  background-color: blue;
+}
+
+.sticky {
+  background-color: darksalmon;
+  position: sticky;
+  color: white;
+  top: 0px;
+  z-index: 2;
+}

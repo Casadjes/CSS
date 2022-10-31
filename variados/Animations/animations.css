@@ -1,0 +1,49 @@
+/* animation-name:  el nombre al @keyframes para manipular.
+
+animation-duration: el tiempo que tarda una animacion en completar un ciclo.
+
+animation-timing-function: establece curvas de aceleracion preestablecidas.
+
+animation-delay: el tiempo entre el elemento que se carga y el 
+inicio de la secuencia de animacion.
+
+animation-direction: establece la direccion de la animacion
+despues del ciclo.
+
+animation-iteration-count:el numero de veces que se debe realizar la animacion.
+
+animation-fill-mode: establece qué valores se aplican antes y despues
+de la animación.
+
+animation-play-state: reproduce la animacion.*/
+
+#animation {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: animar;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes animar {
+  0% {
+    transform: scale(0.3);
+    background-color: darkred;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: coral;
+  }
+}

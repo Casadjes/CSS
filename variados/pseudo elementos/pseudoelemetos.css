@@ -1,0 +1,44 @@
+/*🐦 Pseudo Elementos Tipográficos 🐦*/
+
+/* Este pseudo elemento solo afecta a la primera letra */
+.first h1::first-letter {
+  color: blue;
+}
+
+/* Este pseudo elemento afecta a la linea superior de un párrafo,
+ se adapta al tamaño de la pantalla */
+.first p::first-line {
+  font-weight: bold;
+}
+
+/*🏆 Pseudo Elementos de Contenido 🏆*/
+
+/* Los Pseudo Elementos After y Before añaden algo antes
+y/o después del contenido original del elemento al que
+se asocian. */
+
+/* Aqui le quite el estilo */
+.after-before li {
+  list-style-type: none;
+}
+
+.after-before li::before {
+  content: "🐦";
+  margin-right: 10px;
+}
+.after-before li::after {
+  content: "🏆";
+  margin-left: 10px;
+}
+
+/* Otro ejemplo de after */
+
+.after li {
+  display: inline;
+}
+
+.after li::after {
+  color: #21acde;
+  content: "|";
+  display: inline-block;
+}

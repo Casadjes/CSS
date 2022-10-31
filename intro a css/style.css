@@ -1,0 +1,50 @@
+/* Estilos para colores */
+.colores {
+  color: orangered;
+}
+
+.color-hexadecimal {
+  color: #bce784;
+}
+.color-rgb {
+  color: rgb(100, 0, 200);
+}
+
+.color-rgba {
+  color: rgba(10, 10, 10, 0.85);
+}
+
+.fondo {
+  background-image: url("https://www.encompasscorporation.com/wp-content/uploads/2015/09/example-background.jpg");
+  background-position: right bottom;
+}
+
+.fondo-interno {
+  color: white;
+  background-image: url("roblox.png");
+  background-position: left top;
+}
+
+/* tamaños */
+
+.ancho {
+  background-color: #bce784;
+  width: 100px;
+}
+
+.alto {
+  background-color: aquamarine;
+  height: 200px;
+}
+
+.tarjeta {
+  border-style: solid;
+  border-color: rgb(150, 150, 150);
+  border-width: 1px;
+  /*border-top: none;*/
+  padding: 10px 20px;
+  margin: 10px 20px;
+}
+
+.encabezado {
+}

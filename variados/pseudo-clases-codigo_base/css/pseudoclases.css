@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --fondoPrimario: #fcf7f8;
+  --colorOscuro: #1a1e21;
+  --azul: #3860ec;
+}
+
+body {
+  background: var(--fondoPrimario);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+ul {
+  margin: 0;
+}
+
+.contenedor {
+  max-width: 500px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.titulo {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--colorOscuro);
+  margin-bottom: 20px;
+}
+
+.grupo {
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.grupo div p,
+.grupo div div,
+.grupo div span,
+.grupo ul li {
+  background: #dbdbdb;
+  padding: 10px;
+}
+
+/* ? ------------- PSEUDO-CLASES ------------- */
+.enlace:active {
+  background-color: black;
+}
+.enlace:link {
+  color: blue;
+}
+.enlace:visited {
+  color: #b1b1b1;
+}
+.enlace:hover {
+  color: orange;
+}
+
+/* ? --- --- --- --- PARRAFOS --- --- --- --- */
+.parrafos p:first-child {
+  /* Accede al primer hijo */
+  background: var(--azul);
+  color: white;
+}
+.parrafos p:last-child {
+  /* Accede al último hijo */
+  background: var(--colorOscuro);
+  color: white;
+}
+/* ? --- --- --- --- ELEMENTOS --- --- --- --- */
+.elementos p:first-of-type {
+  /* Accede al primer tipo elemento que le asignes, 
+	ignorando algun otro tipo que haya */
+  background: var(--azul);
+  color: white;
+}
+.elementos div:last-of-type {
+  /* Accede al último tipo elemento que le asignes, 
+	ignorando algun otro tipo que haya */
+  background: var(--colorOscuro);
+  color: white;
+}
+
+/* ? --- --- --- --- LISTA --- --- --- --- */
+.lista :nth-child(2) {
+  /* Te deja elegir a cual o cuales elementos
+	de una lista ponerle estilos, puedes usar numeros
+	para decir a cual elemento elegir, Incluso puedes seleccionar
+	elementos pares con (even) e impares con (odd), para hacer un
+	salto deseado de linea pones el numero y una (n), por ejemplo: (3n)
+	esto hace un salto de 3 lineas*/
+  background: var(--azul);
+  color: #fff;
+}
+.lista :nth-last-child(3) {
+  /* Este hace los mismo, pero lo hace de
+	 abajo hacia ariba */
+  background: var(--colorOscuro);
+  color: #fff;
+}
+
+/* ? --- --- --- --- LISTA 2 --- --- --- --- */
+.lista2 p:nth-of-type(2) {
+  /* Es una combinación entre nth-child y first-of-type
+	con este podemos escojer el elemento en base a tipo y numero.*/
+  background: var(--azul);
+  color: #fff;
+}
+.lista2 div:nth-last-of-type(2) {
+  /* Hace los mismo pero de abajo hacia arriba */
+  background: var(--colorOscuro);
+  color: #fff;
+}
+/* ? --- --- --- --- LISTA 3 --- --- --- --- */
+.lista3 p:only-child {
+  /* Nos permite aplicar estilos a un elemento, pero debe ser el
+unico hijo de una lista o contenedor */
+  background: var(--azul);
+  color: #fff;
+}
+
+/* ? --- --- --- --- LISTA 4 --- --- --- --- */
+.lista4 p:only-of-type {
+  /* Este se aplica si solo hay un tipo de elemento */
+  background: var(--azul);
+  color: #fff;
+}
